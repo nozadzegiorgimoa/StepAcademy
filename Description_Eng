@@ -1,0 +1,49 @@
+# MyBank Console Application
+
+This Python program, named MyBank, is a console-based banking application that allows users to create accounts, make deposits, withdrawals, check balances, and view transaction history.
+
+## Features
+
+1. **SQLite Database Integration**: The program uses an SQLite database named `mybank.db` to store account information and transaction history.
+
+2. **Account Class**: The `Account` class is responsible for managing individual accounts. It allows users to create new accounts or access existing ones. Account information includes a unique name and a balance.
+
+3. **Transaction History**: The program keeps track of transaction history, including the date, amount, and status (deposit or withdrawal). The history is stored in the `history` table in the SQLite database.
+
+4. **Main Menu**: The main program includes a menu with options for user interaction, such as logging in, creating a new account, and exiting the application.
+
+5. **Operations Menu**: Once logged in, users can perform various operations, including depositing funds, withdrawing funds, checking their balance, viewing transaction history, and exiting the application.
+
+## Database Schema
+
+The SQLite database consists of two tables:
+
+- **accounts**: Stores information about each account, including an ID, name, and balance.
+
+- **history**: Records the transaction history, including the account ID, date, amount, and transaction status.
+
+## How to Use
+
+1. Run the program, and you will be prompted with a main menu.
+2. Choose an option:
+    - Option 1: Log in with an existing account.
+    - Option 2: Create a new account.
+    - Option 3: Exit the application.
+
+3. If logging in or creating a new account, you will be directed to the operations menu.
+4. In the operations menu, choose an option:
+    - Option 1: Deposit funds.
+    - Option 2: Withdraw funds.
+    - Option 3: Check balance.
+    - Option 4: View transaction history.
+    - Option 5: Exit the application.
+
+5. Follow the prompts to complete the chosen operation.
+
+## Dependencies
+
+The program uses the following Python modules:
+
+- `datetime`: For handling date and time.
+- `sqlite3`: For interacting with the SQLite database.
+- `pytz`: For working with time zones.
